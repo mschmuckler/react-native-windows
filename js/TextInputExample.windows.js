@@ -610,4 +610,37 @@ exports.examples = [
       );
     }
   },
+  {
+    title: 'TextInput clearButtonMode',
+    render: function() {
+      return (
+        <View>
+          <WithLabel label="never">
+            <TextInput
+              clearButtonMode="never"
+              style={styles.default}
+            />
+          </WithLabel>
+          <WithLabel label="always">
+            <TextInput
+              clearButtonMode="always"
+              style={styles.default}
+            />
+          </WithLabel>
+          <WithLabel label="while-editing">
+            <TextInput
+              clearButtonMode="while-editing"
+              style={styles.default}
+            />
+          </WithLabel>
+          <WithLabel label="unless-editing">
+            <TextInput
+              clearButtonMode="unless-editing"
+              style={styles.default}
+            />
+          </WithLabel>
+        </View>
+      );
+    }
+  },
 ];
